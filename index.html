@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="estiloIndex.css">
+    <script async src="javascriptIndex.js"></script>
+    <title>Tres en raya</title>
+  </head>
+  <body>
+    <div class="pantalla">
+      <h1>Tres en raya</h1>
+      <h3>Hecho por Eva y Alejandro Parra</h3>
+      <form action="">
+        <div class="nombre">
+          <label for="nombre1" required>Jugador 1</label>
+          <input id="nombre1" type="text" maxlength="10"/>
+        </div>
+        <div class="nombre">
+          <label for="nombre2" required >Jugador 2</label>
+          <input id="nombre2" type="text" maxlength="10"/> <br />
+        </div>
+        <div class="color">
+          <label for="colores">Elige un color</label>
+          <select id="color">
+            <option value="red">Rojo</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="yellow">Amarillo</option>
+            <option value="purple" selected>Morado</option>
+          </select>
+        </div>
+        <a id="error" style="color: red;"></a>
+        <div class="enviar">
+          <input type="submit" name="jugar" id="boton" value="Jugar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

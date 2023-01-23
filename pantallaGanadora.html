@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganador</title>
+    <script async src="./pantallaGanadora.js"></script>
+    <link rel="stylesheet" href="./estiloGanador.css">
+  </head>
+  <body>
+    <audio id="audio" autoplay>
+      <source src="./audio/victoria.wav" type="audio/wav" />
+      Tu navegador no soporta AUDIO: formato wav
+    </audio>
+    <div class="pantalla">
+      <a id="trofeo">&#11088;</a>
+      <h1>¡Enhorabuena! <a id="ganador"></a></h1>
+      <h3>¡Has ganadooo!</h3>
+      <button onclick="audio()" style="display: block; width: 100px;">&#127911;</button>
+      <br />
+
+      <h3>Ranking</h3>
+      <div id="ranking"></div>
+
+      <input type="button" value="Jugar otra vez" onclick="window.location.href ='juego.html'"/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+  @keyframes trofeo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  body {
+    background-color: rgb(146, 42, 151);
+    font-family: Poppins;
+    font-size: 22px;
+    color: white;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes color {
+    0% {
+      background-color: rgb(151, 42, 42);
+    }
+    25% {
+      background-color: rgb(42, 75, 151);
+    }
+    50% {
+      background-color: rgb(42, 151, 60);
+    }
+    75% {
+      background-color: rgb(219, 100, 179);
+    }
+    100% {
+      background-color: rgb(131, 42, 151);
+    }
+  }
+  .pantalla {
+    width: 70%;
+    border-radius: 15px;
+    background-color: rgba(203, 203, 254, 0.356);
+    box-shadow: 2px 2px 22px 0px rgba(0, 0, 0, 0.75);
+
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 2em;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    place-content: center;
+  }
+  
+  #trofeo{
+    font-size: xx-large;
+  }
+  h1,
+  h3 {
+    text-shadow: 0px 0px 8px rgb(65, 70, 74);
+    text-align: center;
+  }
+  img {
+    width: 15%;
+
+    animation-name: ganar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+  }
+
+  #ranking a {
+    border-bottom: 1px solid white;
+    padding: 0.5em;
+    display: block;
+    text-align: center;
+  }
+  #ranking a:last-child {
+    border-bottom: 0;
+  }
+
+  input[type="button"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+  }
+  input[type="button"]:hover {
+    background-color: white;
+    color: black;
+  }

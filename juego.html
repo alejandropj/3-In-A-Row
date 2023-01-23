@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <title>Tres en raya</title>
+    <script async>
+      if (sessionStorage.getItem("nombre1") == null){
+         alert("No se han registrado datos.");
+         window.location.href = "index.html";
+      }
+   </script>
+    <link rel="stylesheet" href="estiloJuego.css" />
+    
+    <script src="javascriptJuego.js"></script>
+  </head>
+  <body>
+    <audio id="fallo">
+      <source src="./audio/fallo.wav" type="audio/wav" />
+      Tu navegador no soporta AUDIO: formato wav
+    </audio>
+    <audio id="madera1">
+      <source src="./audio/pieza1.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="madera2">
+      <source src="./audio/pieza2.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="madera3">
+      <source src="./audio/pieza3.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="madera4">
+      <source src="./audio/pieza4.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="madera5">
+      <source src="./audio/pieza5.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="pantalla">
+      <div class="fichas" id="jugador1">
+        <a class="nomJugador" id="nombre1">Jugador</a>
+        <div class= "ficha"><img id="L1" class="pieza" src="img/circulo.png" draggable="true" ondragstart="drag(event)"></div>
+        <div class= "ficha"><img id="M1" class="pieza" src="img/circulo.png" draggable="true" ondragstart="drag(event)"></div>
+        <div class= "ficha"><img id="S1" class="pieza" src="img/circulo.png" draggable="true" ondragstart="drag(event)"></div>
+      </div>
+      <main class="contenedor">
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla"></div>
+        <div  ondrop="drop(event)" ondragover="allowDrop(event)" class="casilla" ></div>
+      </main>
+      <div class="fichas" id="jugador2">
+        <a class="nomJugador" id="nombre2">Jugador</a>
+        <div class="ficha"><img id="L2" class="pieza" src="img/cruz.png" draggable="true" ondragstart="drag(event)"></div>
+        <div class="ficha"><img id="M2" class="pieza" src="img/cruz.png" draggable="true" ondragstart="drag(event)"></div>
+        <div class="ficha"><img id="S2" class="pieza" src="img/cruz.png" draggable="true" ondragstart="drag(event)"></div>
+      </div>
+    </div>
+  </body>
+</html>
